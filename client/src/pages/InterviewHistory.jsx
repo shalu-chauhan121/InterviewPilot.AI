@@ -4,9 +4,9 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios'
 import { FaArrowLeft } from 'react-icons/fa';
+import { ServerUrl } from '../App';
 
 const InterviewHistory = () => {
-   const ServerUrl="http://localhost:8000"
     const [interviews,setInterviews]=useState([]);
     const navigate=useNavigate();
 

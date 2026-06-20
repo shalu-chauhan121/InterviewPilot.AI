@@ -12,8 +12,9 @@ import Pricing from './pages/Pricing'
 import InterviewReport from './pages/InterviewReport'
 import Step3Report from './components/Step3Report'
 
+export const ServerUrl="https://interviewpilot-ai-s2v3.onrender.com";
+
 const App = () => {
-  const ServerUrl="http://localhost:8000";
   const dispatch=useDispatch();
   useEffect(()=>{
     const getUser=async()=>{

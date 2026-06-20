@@ -5,10 +5,9 @@ import {motion} from 'motion/react'
 import axios from 'axios'
 import { useDispatch } from 'react-redux'
 import { setUserData } from '../redux/userSlice'
+import { ServerUrl } from '../App'
 
 const Pricing = () => {
-
-   const ServerUrl="http://localhost:8000"
 
   const navigate=useNavigate();
 

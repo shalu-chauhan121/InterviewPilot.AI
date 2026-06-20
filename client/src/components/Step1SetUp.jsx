@@ -5,9 +5,9 @@ import { useState } from 'react'
 import axios from 'axios'
 import { useDispatch, useSelector } from 'react-redux'
 import { setUserData } from '../redux/userSlice'
+import { ServerUrl } from '../App'
 
 const Step1SetUp = ({onStart}) => {
-    const ServerUrl="http://localhost:8000"
     const {userData}=useSelector((state)=>state.user);
     const dispatch=useDispatch();
     const [role,setRole]=useState("");

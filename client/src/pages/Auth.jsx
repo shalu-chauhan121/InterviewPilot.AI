@@ -8,9 +8,9 @@ import {auth, provider} from "../utils/firebase"
 import axios from 'axios'
 import { useDispatch } from 'react-redux';
 import { setUserData } from '../redux/userSlice';
+import { ServerUrl } from '../App';
 
 const Auth = ({isModel=false}) => {
-    const ServerUrl="http://localhost:8000";
     const dispatch=useDispatch();
    async function handleGoogleAuth(){
         try {

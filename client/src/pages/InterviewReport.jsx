@@ -4,9 +4,9 @@ import { useState } from 'react';
 import { useParams } from 'react-router-dom'
 import axios from "axios"
 import Step3Report from '../components/Step3Report';
+import { ServerUrl } from '../App';
 
 const InterviewReport = () => {
-   const ServerUrl="http://localhost:8000"
   const {id}=useParams();
   const [report,setReport]=useState(null);
   useEffect(()=>{

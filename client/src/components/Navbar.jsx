@@ -9,9 +9,9 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { setUserData } from '../redux/userSlice';
 import AuthModel from './AuthModel';
+import { ServerUrl } from '../App';
 
 const Navbar = () => {
-    const ServerUrl="http://localhost:8000"
     const dispatch=useDispatch();
     let {userData}=useSelector((state)=>state.user);
     let [showUserPopup,setShowUserPopup]=useState(false);

@@ -7,10 +7,10 @@ import { FaMicrophone, FaMicrophoneSlash } from 'react-icons/fa';
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import { current } from '@reduxjs/toolkit';
 import axios from "axios"
+import { ServerUrl } from '../App';
 
 const Step2Interview = ({interviewData,onFinish}) => {
 
-   const ServerUrl="http://localhost:8000"
 
   const {interviewId,questions,userName}=interviewData;
   const [isIntroPhase,setIsIntroPhase]=useState(true);
