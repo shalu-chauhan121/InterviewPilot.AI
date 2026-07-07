@@ -38,6 +38,7 @@ const Step1SetUp = ({onStart}) => {
         setAnalysisDone(true);
         } catch (error) {
             console.log(error);
+            console.log(error.message);
             setAnalysisDone(false);
         } 
     }
